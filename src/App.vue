@@ -1,22 +1,22 @@
-<template>
-  <div id="app">
-    <div>
-      <img class="bgp" src="./assets/img/bgp.jpg">
+<template lang="html">
+  
+    <div id="app">
+      
+      <router-view>
+    
+      </router-view>
     </div>
-    <router-view/>
-  </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  
 }
 </script>
 
 <style>
-.bgp {
-  width: 100%;
-  height: 300px;
-  z-index: 10;
-}
+#app{
+    height: 100%;
+  }
 </style>
