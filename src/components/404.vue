@@ -10,7 +10,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '404'
+      msg: '404错误'
     }
   }
 }
