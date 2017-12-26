@@ -9,10 +9,14 @@ import 'muse-ui/dist/theme-carbon.css'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import store from './store/index'
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
+
 Vue.use(MuseUI)
 Vue.use(ElementUI)
-Vue.config.productionTip = false
+Vue.use(mavonEditor)
 
+Vue.config.productionTip = false
 
 router.beforeEach((to,from,next)=>{
   var userInfo= JSON.parse(sessionStorage.getItem('Admin-Token'))
@@ -56,5 +60,5 @@ new Vue({
   router,
   store,
   template: '<App/>',
-  components: { App }
+  components: { App },
 })

@@ -9,8 +9,9 @@ var app = express();
 
 app.all('*', function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With,Content-Type");//预检请求使用
-  res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");//预检请求使用
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, X-Access-Token");//预检请求使用
+  res.header("Access-Control-Allow-Methods","GET,PUT,POST,DELETE,PATCH,OPTIONS");//预检请求使用
+  res.header("Access-Control-Expose-Headers", "Token")
   next();
 });
 // uncomment after placing your favicon in /public
