@@ -1,6 +1,6 @@
 # vue-express
 
-> A Vue.js project
+> A Vue.js project with express as the back-end
 
 ## Build Setup
 
@@ -11,20 +11,12 @@ npm install
 # serve with hot reload at localhost:8080
 npm run dev
 
-# build for production with minification
-npm run build
+# express load at localhost:3000
+supervisor ./bin/www
 
-# build for production and view the bundle analyzer report
-npm run build --report
+一个粗糙的vue+vuex+vue-router+axios+express+mockJs+elementUI+museUI项目。基本前端功能都实现了，后台只用了express简单处理了请求，返回了一些假数据。并没有连接数据库。
 
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+> todo
+整理前端css、js
+连接MongoDB做存储
+不同分辨率调整
