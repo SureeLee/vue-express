@@ -13,7 +13,7 @@ npm run dev
 
 # express load at localhost:3000
 supervisor ./bin/www
-
+```
 一个粗糙的vue+vuex+vue-router+axios+express+mockJs+elementUI+museUI项目。基本前端功能都实现了，后台只用了express简单处理了请求，返回了一些假数据。并没有连接数据库。
 
 > todo
