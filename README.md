@@ -2,6 +2,8 @@
 
 > A Vue.js project with express as the back-end
 
+先使用vue-cli建立vue项目，然后在vue项目中新建一个server文件夹，在server里用express-generator建立一个express后台，这样前后台分别监听8080和3000端口。
+
 ## Build Setup
 
 ``` bash
